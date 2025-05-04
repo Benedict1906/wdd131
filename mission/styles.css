@@ -1,26 +1,38 @@
 body {
-  font-family: "Times New Roman", Times, serif;
+  font-family: "Times New Roman";
   font-size: 20px;
-  line-height: 1.5;
   text-align: center;
 }
 
-.container {
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 20px;
-  text-align: left;
+.dark {
+  background-color: #333;
+  color: white;
+}
+.dark h2 {
+  color: rgb(160, 212, 237);
 }
 
-.subtitle {
+.content {
+  max-width: 600px;
+  margin: 50xp auto;
+  border: 1xp solid #ccc;
+}
+
+h2 {
   color: #006eb6;
+  font-size: 0.75em;
 }
 
 h1,
 h2 {
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  margin-bottom: 20px;
+  text-align: center;
+  letter-spacing: 4px;
+}
+
+p,
+li {
+  line-height: 1.5;
+  padding: 10xp;
 }
 
 .logo {
