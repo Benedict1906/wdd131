@@ -10,7 +10,7 @@
   --secondary-font: "Mooli", sans-serif;
 }
 
-/* Base Styles */
+/*Base Styles*/
 body {
   font-family: var(--primary-font);
   font-size: 1.2em;
@@ -85,14 +85,14 @@ img {
   margin: 0 auto;
 }
 
-/* 700px Breakpoint: 2-column layout */
+/* 700px Breakpoint: 2-colum layout */
 @media screen and (min-width: 700px) {
   .gallery {
     grid-template-columns: 1fr 1fr;
   }
 }
 
-/* 1000px Breakpoint: 3-column layout + nav changes */
+/* 1000px Breakpoint: 2-colum layout + nav changes */
 @media screen and (min-width: 1000px) {
   .gallery {
     grid-template-columns: 1fr 1fr 1fr;
@@ -107,4 +107,53 @@ img {
   nav button {
     display: none;
   }
+}
+.hide {
+  display: none;
+}
+
+nav .menu a {
+  display: block;
+  padding: 0.5em;
+  color: var(--text-light);
+  text-align: center;
+  text-decoration: none;
+}
+
+dialog.image-viewer {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  border: none;
+  padding: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+dialog.image-viewer::backdrop {
+  background: transparent;
+}
+
+dialog.image-viewer img {
+  display: block;
+  width: 90%;
+  max-height: 100%;
+  margin: 20vh auto;
+  object-fit: contain;
+}
+
+button.close-viewer {
+  position: absolute;
+  top: 20vh;
+  right: 5%;
+  background-color: var(--accent-color);
+  color: white;
+  font-size: 1.5em;
+  border: none;
+  border-radius: 0.3em;
+  padding: 0.2em 0.6em;
+  cursor: pointer;
+  z-index: 11;
 }
