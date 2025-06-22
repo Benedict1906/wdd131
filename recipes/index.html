@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Recipe Book</title>
+    <meta
+      name="description"
+      content="Discover and share your favorite homemade recipes. Easy to cook, easy to love."
+    />
+
+    <meta property="og:title" content="My Recipe Book" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:description"
+      content="Discover and share your favorite homemade recipes. Easy to cook, easy to love."
+    />
+    <meta
+      property="og:image"
+      content="https://example.com/images/food-preview.jpg"
+    />
+    <meta property="og:url" content="https://example.com/recipes/index.html" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <link rel="stylesheet" href="recipes.css" />
+  </head>
+  <body>
+    <header>
+      <img
+        src="images/recipe-book.png"
+        alt="Recipe Book Logo"
+        width="50"
+        height="50"
+      />
+      <h1>My Recipe Book</h1>
+    </header>
+
+    <main>
+      <form class="search-form" action="#" method="get">
+        <label for="search">Search Recipes:</label>
+        <input
+          type="text"
+          id="search"
+          name="search"
+          placeholder="e.g. pasta, chicken..."
+        />
+        <button type="submit">Search</button>
+      </form>
+
+      <section class="recipe">
+        <h2>Spaghetti Carbonara</h2>
+        <p class="description">
+          A classic Italian pasta dish made with eggs, cheese, pancetta, and
+          black pepper.
+        </p>
+
+        <span class="rating" role="img" aria-label="Rating: 4 out of 5 stars">
+          <span aria-hidden="true" class="icon-star">⭐</span>
+          <span aria-hidden="true" class="icon-star">⭐</span>
+          <span aria-hidden="true" class="icon-star">⭐</span>
+          <span aria-hidden="true" class="icon-star">⭐</span>
+          <span aria-hidden="true" class="icon-star-empty">☆</span>
+        </span>
+      </section>
+    </main>
+
+    <footer>
+      <p style="font-size: 0.6em">
+        <a
+          href="https://www.flaticon.com/free-icons/recipe"
+          title="recipe icons"
+        >
+          Recipe icons created by Freepik - Flaticon
+        </a>
+      </p>
+
+      <div class="social">
+        <a href="#"
+          ><img src="images/instagram_icon.svg" alt="Instagram icon"
+        /></a>
+        <a href="#"><img src="images/youtube_icon.svg" alt="YouTube icon" /></a>
+        <a href="#"
+          ><img src="images/pinterest_icon.svg" alt="Pinterest icon"
+        /></a>
+      </div>
+    </footer>
+
+    <script src="recipes.js"></script>
+  </body>
+</html>
