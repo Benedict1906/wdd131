@@ -1,0 +1,133 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.skiptocontent a {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: #2a9d8f;
+  color: white;
+  padding: 8px 16px;
+  z-index: 100;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 0 0 4px 0;
+  transition: top 0.3s ease;
+}
+
+.skiptocontent a:focus {
+  top: 0;
+  outline: 2px solid #ffd700;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #f9f9f9;
+  color: #333333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Merriweather", serif;
+  color: #2a9d8f;
+}
+
+a {
+  color: #2a9d8f;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+header {
+  background-color: #e0f4f2;
+  padding: 2rem 1rem 1rem;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+nav {
+  border-top: 2px solid #ccc;
+  border-bottom: 2px solid #ccc;
+  padding: 1rem 0;
+}
+
+.main-nav {
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+  justify-content: center;
+  list-style: none;
+  max-width: 400px;
+  margin: 0 auto;
+  gap: 1.5rem;
+  padding: 0;
+}
+
+.main-nav li {
+  line-height: 2rem;
+}
+
+.main-nav a {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.page-layout {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.book {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 1rem;
+  background-color: white;
+  padding: 1.5em;
+  margin-bottom: 2em;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.book-details {
+  font-size: 0.95em;
+  color: #555;
+}
+
+.book-content h2 {
+  margin-top: 0;
+}
+
+.book img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 0.5em;
+}
+
+.filters {
+  background-color: #ffffff;
+  padding: 1em;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+footer {
+  text-align: center;
+  font-size: 0.9em;
+  color: #666;
+  margin-top: 3rem;
+}
