@@ -1,0 +1,87 @@
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f3f3f3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+main {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+}
+
+form {
+  display: grid;
+  gap: 1rem;
+  justify-items: center;
+}
+
+.card {
+  width: 300px;
+  height: 180px;
+  border-radius: 15px;
+  padding: 1rem;
+  display: grid;
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.front {
+  background-color: #bebbb8;
+  z-index: 2;
+}
+
+.back {
+  background-color: #cac5c0f5;
+  z-index: 1;
+}
+
+.card-image {
+  justify-self: end;
+}
+
+label {
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+}
+
+input {
+  width: 100%;
+  padding: 0.3rem;
+  border-radius: 5px;
+  border: none;
+}
+
+.date-fields {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+button {
+  background-color: #f38b1d;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #d5e9e4d2;
+}
+
+.errorMsg {
+  color: red;
+  font-weight: bold;
+  text-align: center;
+}
