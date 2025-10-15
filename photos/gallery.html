@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Olisa Photography | Gallery</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <img src="images/logo.png" alt="Olisa Photography logo" class="logo" />
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="gallery.html" class="active">Gallery</a></li>
+          <li><a href="site-plan.html">Site Plan</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Photo Gallery</h1>
+      <p>
+        Browse some of our best work — from portraits to landscapes and events.
+      </p>
+
+      <div class="filters">
+        <button data-filter="all" class="active">All</button>
+        <button data-filter="portrait">Portraits</button>
+        <button data-filter="landscape">Landscapes</button>
+        <button data-filter="event">Events</button>
+      </div>
+
+      <div class="gallery">
+        <img
+          src="images/portrait1.jpg"
+          alt="Portrait 1"
+          data-category="portrait"
+        />
+        <img
+          src="images/portrait2.jpg"
+          alt="Portrait 2"
+          data-category="portrait"
+        />
+        <img
+          src="images/landscape1.jpg"
+          alt="Landscape 1"
+          data-category="landscape"
+        />
+        <img
+          src="images/landscape2.jpg"
+          alt="Landscape 2"
+          data-category="landscape"
+        />
+        <img src="images/event1.jpg" alt="Event 1" data-category="event" />
+        <img src="images/event2.jpg" alt="Event 2" data-category="event" />
+      </div>
+
+      <div id="modal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modal-img" alt="" />
+        <div id="caption"></div>
+      </div>
+    </main>
+
+    <footer>
+      <p>
+        &copy; <span id="year"></span> Olisa Photography. All rights reserved.
+      </p>
+    </footer>
+
+    <script src="gallery.js"></script>
+  </body>
+</html>
