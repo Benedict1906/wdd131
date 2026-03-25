@@ -1,0 +1,153 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: black;
+  color: white;
+}
+
+/* ===== Layout Helpers ===== */
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+section {
+  padding: 40px 20px;
+}
+
+/* ===== Header / Nav ===== */
+header {
+  background: linear-gradient(90deg, black, red);
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid green;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav a {
+  color: white;
+  margin-left: 15px;
+  text-decoration: none;
+  font-weight: bold;
+  transition:
+    color 0.3s ease,
+    border-bottom 0.3s ease;
+}
+
+nav a:hover {
+  color: blue;
+}
+
+.active {
+  color: red;
+  border-bottom: 2px solid red;
+}
+
+/* ===== Hero ===== */
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)),
+    url("https://picsum.photos/1200/500?dark") no-repeat center/cover;
+  border-bottom: 3px solid red;
+}
+
+.hero h2 {
+  color: green;
+  font-size: 2.5rem;
+}
+
+.logo {
+  width: 120px;
+  display: block;
+  margin: 0 auto 20px;
+}
+
+/* ===== Intro ===== */
+.intro {
+  text-align: center;
+  max-width: 800px;
+  margin: auto;
+  line-height: 1.7;
+}
+
+/* ===== Content (Character Pages) ===== */
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 30px;
+  padding: 40px;
+}
+
+.content img {
+  width: 300px;
+  border-radius: 10px;
+  border: 3px solid blue;
+  box-shadow: 0 0 15px red;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.content img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px green;
+}
+
+.content div {
+  max-width: 500px;
+  line-height: 1.7;
+}
+
+/* ===== Typography ===== */
+h1,
+h2 {
+  color: green;
+  letter-spacing: 1px;
+}
+
+h3 {
+  color: white;
+}
+
+/* ===== Footer ===== */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: black;
+  border-top: 2px solid green;
+  margin-top: 40px;
+}
+
+/* ===== Buttons ===== */
+button {
+  background: red;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: blue;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  header {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
