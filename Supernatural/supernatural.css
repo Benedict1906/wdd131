@@ -99,7 +99,7 @@ nav a:hover {
 
 .content img:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 25px green;
+  box-shadow: 0 0 25px #ffffff;
 }
 
 .content div {
@@ -154,10 +154,10 @@ button:hover {
   font-weight: 600;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: green;
+  color: #ffffff;
   margin-bottom: 1.5rem;
   padding-bottom: 10px;
-  border-bottom: 2px solid green;
+  border-bottom: 2px solid #ffffff;
 }
 
 .convention-grid {
@@ -237,7 +237,7 @@ button:hover {
   letter-spacing: 0.15em;
   text-transform: uppercase;
   background: rgba(0, 128, 0, 0.15);
-  color: green;
+  color: #ffffff;
   border: 1px solid rgba(0, 128, 0, 0.4);
   border-radius: 4px;
   padding: 3px 7px;
