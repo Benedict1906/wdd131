@@ -17,7 +17,7 @@ section {
 
 /* ===== Header / Nav ===== */
 header {
-  background: linear-gradient(90deg, black, red);
+  background: linear-gradient(90deg, black, rgba(255, 0, 0, 0.564));
   padding: 15px 30px;
   display: flex;
   justify-content: space-between;
@@ -43,8 +43,8 @@ nav a:hover {
 }
 
 .active {
-  color: red;
-  border-bottom: 2px solid red;
+  color: rgba(255, 0, 0, 0.51);
+  border-bottom: 2px solid rgba(255, 0, 0, 0.486);
 }
 
 /* ===== Hero ===== */
@@ -54,7 +54,7 @@ nav a:hover {
   background:
     linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)),
     url("https://picsum.photos/1200/500?dark") no-repeat center/cover;
-  border-bottom: 3px solid red;
+  border-bottom: 3px solid rgba(255, 0, 0, 0.57);
 }
 
 .hero h2 {
@@ -89,7 +89,7 @@ nav a:hover {
   width: 300px;
   border-radius: 10px;
   border: 3px solid blue;
-  box-shadow: 0 0 15px red;
+  box-shadow: 0 0 15px rgba(255, 0, 0, 0.521);
   transition:
     transform 0.3s ease,
     box-shadow 0.3s ease;
@@ -127,7 +127,7 @@ footer {
 
 /* ===== Buttons ===== */
 button {
-  background: red;
+  background: rgba(255, 0, 0, 0.493);
   color: white;
   border: none;
   padding: 10px 15px;
