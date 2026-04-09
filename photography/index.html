@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Olisa Photography | Capturing Dreams</title>
+    <link rel="stylesheet" href="site-plan.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo-container">
+        <img src="logo.png" alt="Olisa Photography Logo" id="site-logo" />
+      </div>
+      <nav>
+        <ul id="nav-menu">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section
+        id="hero"
+        style="
+          background-image:
+            linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+            url(&quot;featured.jpg&quot;);
+          background-size: cover;
+          background-position: center;
+          color: white;
+          padding: 100px 20px;
+          text-align: center;
+        "
+      >
+        <h2>Capturing Dreams in Every Frame</h2>
+        <p>
+          Professional photography services specializing in portraits,
+          landscapes, and event coverage.
+        </p>
+      </section>
+
+      <section id="gallery-container">
+        <div class="section-title">
+          <h2>Portfolio Gallery</h2>
+          <p>Filter by category to explore my work.</p>
+        </div>
+
+        <div id="gallery-filters">
+          <button class="filter-btn" data-category="all">All Work</button>
+          <button class="filter-btn" data-category="portrait">Portraits</button>
+          <button class="filter-btn" data-category="landscape">
+            Landscapes
+          </button>
+          <button class="filter-btn" data-category="event">Events</button>
+        </div>
+
+        <section id="gallery" class="gallery-grid"></section>
+      </section>
+
+      <section
+        id="contact"
+        style="
+          padding: 50px 20px;
+          background-color: #f4f4f4;
+          text-align: center;
+        "
+      >
+        <h2>Work With Me</h2>
+        <p>
+          Based in Minnesota, I am available for travel and on-site sessions.
+          Whether you need a professional headshot, a wedding captured, or a
+          scenic print for your home, let's bring your vision to life.
+        </p>
+
+        <div class="contact-info" style="margin-top: 20px">
+          <p><strong>Email:</strong> contact@olisaphotography.com</p>
+          <button
+            style="
+              background-color: #0056b3;
+              color: white;
+              border: none;
+              padding: 10px 20px;
+              cursor: pointer;
+              border-radius: 5px;
+            "
+          >
+            Book a Session
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 Olisa Photography. All rights reserved.</p>
+    </footer>
+
+    <script src="site-plan.js"></script>
+  </body>
+</html>
