@@ -1,0 +1,60 @@
+/* Mobile First Design */
+:root {
+  --primary-blue: #0056b3;
+  --white: #ffffff;
+  --black: #1a1a1a;
+  --gray: #f4f4f4;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--white);
+  color: var(--black);
+}
+
+header {
+  background-color: var(--black);
+  color: var(--white);
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+h1 span {
+  color: var(--primary-blue);
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: 1fr; /* Single column for mobile */
+  gap: 15px;
+  padding: 20px;
+}
+
+/* Tablet and Desktop Responsiveness */
+@media (min-width: 768px) {
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .gallery-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.photo-card {
+  border: 2px solid var(--black);
+  transition: transform 0.3s;
+}
+
+.photo-card:hover {
+  border-color: var(--primary-blue);
+  transform: scale(1.02);
+}
