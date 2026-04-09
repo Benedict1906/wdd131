@@ -49,12 +49,12 @@ nav a:hover {
   color: var(--primary-blue);
 }
 
-/* Hero Fix */
+/* Hero Section */
 #hero {
   height: 50vh;
   background:
     linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("featured.jpg") no-repeat center center/cover;
+    url("images/featured.jpg") no-repeat center center/cover;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -62,12 +62,13 @@ nav a:hover {
   text-align: center;
 }
 
-/* Blue Aesthetics for Buttons */
+/* Interactive Gallery Filters */
 #gallery-filters {
   display: flex;
   justify-content: center;
   gap: 10px;
   padding: 20px;
+  flex-wrap: wrap;
 }
 
 .filter-btn {
@@ -77,6 +78,7 @@ nav a:hover {
   color: var(--primary-blue);
   cursor: pointer;
   font-weight: bold;
+  transition: all 0.3s ease;
 }
 
 .filter-btn.active,
@@ -85,16 +87,7 @@ nav a:hover {
   color: white;
 }
 
-.cta-button {
-  background-color: var(--primary-blue);
-  color: white;
-  border: none;
-  padding: 12px 24px;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-/* Gallery Grid */
+/* Responsive Gallery Grid */
 .gallery-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -102,9 +95,21 @@ nav a:hover {
   padding: 20px 5%;
 }
 
+/* Interactive Photo Cards */
 .photo-card {
   border: 1px solid #ddd;
   border-bottom: 5px solid var(--primary-blue);
+  transition:
+    transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+    box-shadow 0.3s ease;
+  cursor: pointer;
+  overflow: hidden;
+  background: var(--white);
+}
+
+.photo-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 .photo-card img {
@@ -112,6 +117,41 @@ nav a:hover {
   height: 250px;
   object-fit: cover;
   display: block;
+  transition: transform 0.5s ease;
+}
+
+.photo-card:hover img {
+  transform: scale(1.1);
+}
+
+/* Book a Session Button */
+.cta-button {
+  background-color: var(--primary-blue);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.cta-button:hover {
+  background-color: #004494;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.cta-button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#contact {
+  padding: 50px 20px;
+  background-color: var(--gray);
+  text-align: center;
 }
 
 footer {
