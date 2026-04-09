@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Photography Portfolio | Simple & Engaging</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo-container">
+        <h1>PHOTO<span>STUDIO</span></h1>
+      </div>
+      <nav>
+        <ul id="nav-menu">
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="hero">
+        <h2>Capturing Moments</h2>
+        <p>Professional photography with a blue, black, and white aesthetic.</p>
+      </section>
+
+      <section id="gallery-filters">
+        <button class="filter-btn" data-category="all">All</button>
+        <button class="filter-btn" data-category="portrait">Portraits</button>
+        <button class="filter-btn" data-category="landscape">Landscape</button>
+      </section>
+
+      <section id="gallery" class="gallery-grid"></section>
+    </main>
+
+    <script src="main.js"></script>
+  </body>
+</html>
