@@ -1,4 +1,3 @@
-// 1. Data Structure: Array of Objects
 const photoData = [
   {
     id: 1,
@@ -20,24 +19,17 @@ const photoData = [
     url: "landscape2.jpg",
   },
   { id: 5, title: "The Big Day", category: "event", url: "event1.jpg" },
-  { id: 6, title: "Concert Energy", category: "event", url: "event2.jpg" },
+  { id: 6, title: "Golden Sunset", category: "landscape", url: "hero.jpg" },
 ];
 
-// 2. DOM Selection
 const galleryContainer = document.querySelector("#gallery");
 const filterButtons = document.querySelectorAll(".filter-btn");
 
-// 3. Function to build the gallery (DOM Interaction)
 function displayPhotos(photosArray) {
-  // Clear existing content
   galleryContainer.innerHTML = "";
-
-  // 4. Array Method: forEach
   photosArray.forEach((photo) => {
     const card = document.createElement("div");
     card.className = "photo-card";
-
-    // Building the HTML structure for each card
     card.innerHTML = `
       <img src="${photo.url}" alt="${photo.title}">
       <div style="padding:15px">
@@ -49,24 +41,25 @@ function displayPhotos(photosArray) {
   });
 }
 
-// 5. Logic: Filtering with Conditional Branching
 function filterGallery(category) {
   if (category === "all") {
     displayPhotos(photoData);
   } else {
-    // 6. Array Method: filter
     const filtered = photoData.filter((p) => p.category === category);
     displayPhotos(filtered);
   }
 }
 
-// 7. Event Listeners
 filterButtons.forEach((btn) => {
   btn.addEventListener("click", (e) => {
+    // Logic for blue 'active' button state
+    filterButtons.forEach((b) => b.classList.remove("active"));
+    e.target.classList.add("active");
+
     const category = e.target.getAttribute("data-category");
     filterGallery(category);
   });
 });
 
-// Initial Load: Display all photos when page opens
+// Initial load
 displayPhotos(photoData);
