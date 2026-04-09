@@ -3,7 +3,7 @@ const photoData = [
     id: 1,
     title: "Classic Portrait",
     category: "portrait",
-    url: "portrait1.jpg",
+    url: "images/portrait1.jpg",
   },
   { id: 2, title: "High Fashion", category: "portrait", url: "portrait2.jpg" },
   {
